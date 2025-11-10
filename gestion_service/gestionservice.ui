@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gestionservice</class>
+ <widget class="QMainWindow" name="gestionservice">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1291</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>gestionservice</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="b1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>gestion_client</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion d’employées </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>gestion_equipement</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Gestion des Pièces détachées </string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>-20</y>
+      <width>1091</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>350</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A-Z</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>temp</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>prix</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>40</y>
+       <width>211</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>Liste de Service :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>60</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>📄PDF</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>110</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(133, 0, 200);
+border-radius: 5px;  </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_10">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>22</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>🔍</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>340</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>Tri par :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>110</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>Rechercher:</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="s1">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>200</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>🗑️</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>271</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(133, 0, 200);
+border-radius: 5px;  </string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>251</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+       </property>
+       <property name="text">
+        <string>Photo</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>50</y>
+         <width>75</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>envoyer</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>80</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+       </property>
+       <property name="text">
+        <string>Problem</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>130</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+       </property>
+       <property name="text">
+        <string>Employé</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>211</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    border: 2px solid #8e44ad;  /* purple border */
+   border-radius: 5px;          /* optional rounded corners */
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>290</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>320</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+       </property>
+       <property name="text">
+        <string>Prénom</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="an">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>290</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: 2px solid #5dade2;  
+    border-radius: 4px;      
+    padding: 2px;   
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ap">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>320</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    border: 2px solid #5dade2;  
+    border-radius: 4px;      
+    padding: 2px;   
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bp1">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>360</y>
+         <width>75</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>valider</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_9">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>50</y>
+         <width>22</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">    border: 2px solid #8e44ad;  /* purple border */
+   border-radius: 5px;          /* optional rounded corners */
+</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QToolButton" name="m1">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>260</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>🖊️</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 16pt &quot;Segoe UI&quot;;
+color: rgb(170, 0, 255);</string>
+     </property>
+     <property name="text">
+      <string>       Ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>350</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Trier</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tw">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>180</y>
+       <width>611</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QHeaderView::section {
+    background-color: #0b3d91;  /* dark blue */
+    color: white;               /* white text */
+    font-weight: bold;          /* make header text stand out */
+    border: 1px solid #062b66;  /* darker border for contrast */
+    padding: 4px;               /* a bit of spacing */
+    border-radius: 5px;  
+}</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>equipement</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>client</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>employer</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>temp</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>prix</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="b3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>191</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #8e44ad;  /* purple background */
+    color: white;               /* white text */
+    border: 2px solid #732d91;  /* darker purple border */
+    border-radius: 5px;         /* rounded corners */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>gestion_service</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1291</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

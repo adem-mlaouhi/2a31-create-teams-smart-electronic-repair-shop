@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
   file(REMOVE_RECURSE
-  "CMakeFiles\\gestion_service_autogen.dir\\AutogenUsed.txt"
-  "CMakeFiles\\gestion_service_autogen.dir\\ParseCache.txt"
-  "gestion_service_autogen"
+  "CMakeFiles\\gestionservice_autogen.dir\\AutogenUsed.txt"
+  "CMakeFiles\\gestionservice_autogen.dir\\ParseCache.txt"
+  "gestionservice_autogen"
   )
 endif()

@@ -1,11 +1,18 @@
-#include "gestion_service.h"
+#include "connection.h"
+#include "gestionservice.h"
 #include <QApplication>
-#include "connection.cpp"
+#include <QMessageBox>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Gestion_Service w;
-    w.show();
-    return a.exec();
+    connection c;
+    bool test = c.createconnect();
+    if (test) {
+        GestionService w;
+        w.show();
+        return a.exec();
+    } else {
+        QMessageBox::critical(nullptr, "Erreur", "Échec de la connexion à Oracle !");
+        return -1;
+    }
 }
-

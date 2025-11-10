@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/edemm/OneDrive/Desktop/gestion_service
+# Install script for directory: C:/Users/edemm/OneDrive/Desktop/gestionservice
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/gestion_service")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/gestionservice")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,11 +38,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/edemm/OneDrive/Desktop/gestion_service/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/gestion_service.exe")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gestion_service.exe" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gestion_service.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/edemm/OneDrive/Desktop/gestionservice/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/gestionservice.exe")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gestionservice.exe" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gestionservice.exe")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "C:/Qt/Tools/mingw1120_64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gestion_service.exe")
+      execute_process(COMMAND "C:/Qt/Tools/mingw1120_64/bin/strip.exe" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/gestionservice.exe")
     endif()
   endif()
 endif()
@@ -62,6 +62,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/edemm/OneDrive/Desktop/gestion_service/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/edemm/OneDrive/Desktop/gestionservice/build/Desktop_Qt_6_7_3_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
